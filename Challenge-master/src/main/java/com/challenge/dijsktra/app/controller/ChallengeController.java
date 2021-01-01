@@ -23,7 +23,6 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
 
-import com.challenge.dijsktra.app.SpringBootChallengeDijsktraApplication;
 import com.challenge.dijsktra.app.DTOs.CityDTO;
 import com.challenge.dijsktra.app.DTOs.ItineraryDTO;
 import com.challenge.dijsktra.app.algorithm.Dijkstra;

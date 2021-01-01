@@ -7,5 +7,3 @@ public class NoCitiesFoundException extends RuntimeException {
         super("No Cities found");
     }
 }
-
-

@@ -7,7 +7,7 @@ import com.challenge.dijsktra.app.model.Itinerary;
 
 public interface IItineraryService {
 
-	  //Creates new Itenerary
+	  //Creates new Itinerary
 	  Itinerary save(Itinerary itinerary);
     
 	  //Counting Itineraries in the DB

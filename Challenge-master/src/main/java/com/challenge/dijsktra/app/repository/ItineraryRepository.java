@@ -31,3 +31,4 @@ public interface ItineraryRepository extends CrudRepository<Itinerary, Long> {
   //Returns a Itinerary by its Id
   Optional<Itinerary> findById(long id);
 }
+

@@ -13,20 +13,13 @@ import com.challenge.dijsktra.app.exceptions.NoCitiesFoundException;
 import com.challenge.dijsktra.app.model.City;
 import com.challenge.dijsktra.app.repository.CityRepository;
 
-
 @Service
 @Qualifier("com.challenge.dijkstra.app.service.CityService")
 public class CityService implements ICityService {
 
-	/*@Autowired
+	@Autowired
 	private CityRepository cityRepository;
-*/
-	private final CityRepository cityRepository;
-	
-	public CityService(CityRepository cityRepository) {
-		this.cityRepository = cityRepository;
-		
-	}
+
 	@Override
     public City save(City city) {
 		//Checks duplicate Cities and returns a controlled exception
@@ -44,7 +37,7 @@ public class CityService implements ICityService {
 	@Override
 	public List<City> findAll() {
 		
-		var cities = (List<City>) cityRepository.findAll();
+		List<City> cities = (List<City>) cityRepository.findAll();
 
 		if (cities.isEmpty()) {
 

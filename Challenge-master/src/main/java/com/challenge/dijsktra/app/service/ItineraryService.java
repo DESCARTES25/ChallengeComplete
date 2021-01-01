@@ -1,5 +1,6 @@
 package com.challenge.dijsktra.app.service;
 
+
 import java.util.List;
 import java.util.Optional;
 
@@ -39,7 +40,7 @@ public class ItineraryService implements IItineraryService {
 	@Override
 	public List<Itinerary> findAll() {
 
-		var itineraries = (List<Itinerary>) itineraryRepository.findAll();
+		List<Itinerary> itineraries = (List<Itinerary>) itineraryRepository.findAll();
 
 		if (itineraries.isEmpty()) {
 
