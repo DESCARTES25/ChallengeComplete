@@ -1,3 +1,4 @@
+delete from itineraries;
 delete from cities;
 
 INSERT INTO cities(name) VALUES('Madrid');
@@ -7,7 +8,7 @@ INSERT INTO cities(name) VALUES('Tokyo');
 INSERT INTO cities(name) VALUES('Paris');
 INSERT INTO cities(name) VALUES('New York');
 
-delete from itineraries;
+
 
 INSERT INTO itineraries(origin_id ,
     destination_id ,
